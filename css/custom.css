@@ -5,3 +5,13 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/* Site Styles */
+
+.band.header {
+    background-color: #923e2c;
+}
+
+.band.footer {
+    background-color: #696969;
+}
