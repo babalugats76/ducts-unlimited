@@ -25,7 +25,6 @@ img {
     background-color: #923e2c;
 }
 
-
 .band.footer {
     background-color: #696969;
 }
@@ -65,8 +64,27 @@ img {
     cursor: pointer;
 }
 
+#content {
+    padding-top: 1.6em;
+}
+
 #footer {
-    min-height: 65px;
+    min-height: 3em;
+}
+
+/* Responsive Slides */
+
+.caption {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    text-align: center;
+    background: #000;
+    background: rgba(0,0,0, .8);
+    color: #fff;
 }
 
 /* Media Queries */

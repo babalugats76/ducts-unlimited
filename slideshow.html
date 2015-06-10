@@ -17,6 +17,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/responsiveslides.css">
         <link rel="stylesheet" href="css/custom.css">
 
         <!-- Favicon -->
@@ -24,6 +25,19 @@
 
         <!-- JavaScript -->
         <script src="js/jquery.2.1.3.min.js"></script>
+        <script src="js/responsiveslides.1.54.min.js"></script>
+
+        <script>
+            $(function () {
+                $(".rslides").responsiveSlides({
+                    auto: true,
+                    pagination: false,
+                    nav: false,
+                    fade: 500,
+                    maxwidth: 800
+                });
+            });
+        </script>
 
     </head>
     <body>
@@ -47,6 +61,24 @@
             </div>
         </div>
         <div id="content" class="container">
+            <div class="row">
+                <div class="u-full-width">
+                    <ul class="rslides">
+                        <li>
+                            <img src="images/original/dakin-vrv-system-1200x800.jpg" alt="">
+                            <p class="caption">Dakin VRV System</p>
+                        </li>
+                        <li>
+                            <img src="images/original/duct-installation-800x559.jpg" alt="">
+                            <p class="caption">Spiral Duct Installation</p>
+                        </li>
+                        <li>
+                            <img src="images/original/ground-up-building-1200x480.jpg" alt="">
+                            <p class="caption">Ground-up Installation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="band footer"></div>
     </body>
