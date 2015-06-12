@@ -10,22 +10,32 @@ body {
     font-size: 1.8em;
 }
 
+/*pre, blockquote, dl, figure, table, p, ul, ol, form {
+    margin-bottom: 1.3rem;
+}*/
+
 img {
     max-width: 100%;
     text-align: center;
 }
+
 
 h1,h2,h3,h4,h5,h5,h6 {
     text-align: center;
     color: #cf2b08;
 }
 
-.row.bm {
-    margin-bottom: 2.6rem;
+#content {
+    margin-bottom: 2.5rem;
 }
 
-.row.tm {
-    margin-top: 2.6rem;
+#content h3 {
+    margin-top: 2.5rem;
+}
+
+#content div.row.u-full-width {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Site Styles */
@@ -77,10 +87,6 @@ h1,h2,h3,h4,h5,h5,h6 {
     cursor: pointer;
 }
 
-/*#content h3 {
-    padding-top: 2.6rem;
-}*/
-
 #footer {
     height: 75px;
     position: relative;
@@ -131,7 +137,7 @@ th, td {
 .image-container { 
     position: relative; 
     width: 100%;
-    margin: 2.6rem auto 2.6rem;
+    margin: 2.5rem auto;
 }
 
 .image-container img {
@@ -189,6 +195,10 @@ th, td {
     margin: 0 auto;
 }
 
+#supplier img:nth-child(2) {
+    margin-top: 2.6rem;
+}
+
 /* Fabrication */
 
 #custom.rslides {
@@ -203,7 +213,7 @@ th, td {
 #plasma-container { 
     position: relative; 
     width: 396px;
-    margin: 1rem auto 2rem;
+    margin: 0 auto;
 }
 
 #plasma-container img {
@@ -277,6 +287,7 @@ th, td {
     }
 
     #supplier img:nth-child(2) {
+        margin-top: 0;
         padding-left: 3rem;
     }
 
