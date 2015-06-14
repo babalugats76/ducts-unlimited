@@ -18,6 +18,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/responsiveslides.css">
         <link rel="stylesheet" href="css/custom.css">
 
         <!-- Favicon -->
@@ -25,7 +26,18 @@
 
         <!-- JavaScript -->
         <script src="js/jquery.2.1.3.min.js"></script>
+        <script src="js/responsiveslides.1.54.min.js"></script>
 
+        <script>
+            $(function () {
+                $(".rslides").responsiveSlides({
+                    auto: true,
+                    pagination: false,
+                    nav: false,
+                    fade: 500
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="band header">
@@ -41,17 +53,89 @@
                     <div class="twelve columns">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="slideshow.html">Slideshow Example</a></li>
-                            <li><a href="contact.html">Contact</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="fabrication.html">Fabrication</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div id="content" class="container">
+            <div class="row u-full-width">
+                <span id="tagline" class="u-cf">Tenant Finish &middot; Commercial &middot; HVAC</span>
+                <h3>Who We Are</h3>
+            </div>
+            <div class="row u-full-width">
+                <p>Ducts Unlimited. a woman owned business enterprise, has been in business since April, 2000. Our business was founded on the premise that you deserve a quality job that is done right the first time. This philosophy has led to success in the commercial HVAC market in the Denver metropolitan area. We currently have over 55 employees, a service fleet of 27 vehicles, projects ranging from $500 to $2,000,000, and projected sales in excess of $11 million dollars this year.</p>
+            </div>
+            <div class="row u-full-width">
+                <div id="hq" class="column one-half">
+                    <div class="image-container">
+                        <img src="images/ducts-unlimited-office-960x532.jpg" alt="Ducts Unlimited Mechnical Systems Inc. Headquarters">
+                        <p class="caption">For after hours emergency service - call 303-519-6266</p>
+                    </div>    
+                </div>
+                <div id="contact" class="column one-half">
+                    <h4>5156 W. 58th Ave.</h4>
+                    <h4>Suite A</h4>
+                    <h4>Arvada, CO 80002</h4>
+                    <h4>303-657-5592</h4>
+                    <h4>FAX 303-430-1686</h4>
+                </div>
+            </div>
+            <div class="row u-full-width">
+                <h3>What We Do</h3>
+            </div>
+            <div class="row u-full-width">
+                <div class="column one-half">
+                    <p>Our projects are located in office buildings from Castle Rock to Longmont, but the majority of work is in downtown Denver and the Denver Tech Center. Ducts Unlimited is very familiar with the International Mechanical code and both the President and Vice President hold a Masters from the International Code Council. Projects have included multiple restaurants, computer rooms, strip mall build outs, tenant finishes, core and shell in small buildings. We have a large service department to maintain any equipment, whether installed by us or not.</p>  
+                </div>
+                <div class="column one-half">
+                    <ul id="portfolio" class="rslides">
+                        <li>
+                            <img src="images/office-spiral-duct-640x379.jpg" alt="">
+                            <p class="caption">Spiral Duct Work (Office)</p>
+                        </li>     
+                        <li>
+                            <img src="images/rectangular-duct-640x379.jpg" alt="">
+                            <p class="caption">Rectangular Duct Work</p>
+                        </li>    
+                        <li>
+                            <img src="images/dakin-vrv-system-640x379.jpg" alt="">
+                            <p class="caption">Dakin VRV Systems</p>
+                        </li>                        
+                        <li>
+                            <img src="images/exposed-spiral-duct-640x379.jpg" alt="">
+                            <p class="caption">Exposed Spiral Duct Work</p>
+                        </li>
+                        <li>
+                            <img src="images/stulz-ac-units-640x379.jpg" alt="">
+                            <p class="caption">Stulz AC Units</p>
+                        </li>
+                        <li>
+                            <img src="images/duct-installation-640x379.jpg" alt="">
+                            <p class="caption">Spiral Duct Installation</p>
+                        </li>
+                        <li>
+                            <img src="images/stulz-air-cooled-condensers-640x379.jpg" alt="">
+                            <p class="caption">Stulz Air-Cooled Condensers</p>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row u-full-width">
+                <p>Our management team has over 100 years of combined experience in the HVAC industry. This experience, coupled with the latest in technology and tools, makes Ducts Unlimited unbeatable in delivering customer satisfaction.  In addition, we carry all the necessary insurance to work in most buildings, including a substantial umbrella policy. Detailed insurance information will be provided upon request.  <a href="contact.html" title="Contact Us">Contact us</a> today to see how we can meet the needs of your next project.</p>
+            </div>
+            <div id="csa" class="row u-full-width">
+                <img src="images/original/2015-csa-plaque-310x120.jpg" alt="2015 CSA Plaque"/>
+                <img src="images/original/2015-pinnacol-310x120.jpg" alt="2015 CSA Pinnacol Plaque"/>
+            </div>
         </div>
-        <div class="band footer"></div>
+        <div class="band footer">
+            <div id="footer" class="row u-full-width">
+                <p>Proudly serving the Denver Metro area since 2000</p>
+            </div>
+        </div>
     </body>
 </html>

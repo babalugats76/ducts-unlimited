@@ -7,22 +7,28 @@
 }
 
 body {
-    font-size: 1.8em;
+    font-size: 1.7em;
 }
 
-/*pre, blockquote, dl, figure, table, p, ul, ol, form {
-    margin-bottom: 1.3rem;
-}*/
+p {
+    line-height: 1.4;
+}
 
 img {
     max-width: 100%;
     text-align: center;
 }
 
-
-h1,h2,h3,h4,h5,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
     text-align: center;
+}
+
+h1,h2,h3,h4,h6 {
     color: #cf2b08;
+}
+
+h5 {
+    color: #923e2c;
 }
 
 #content {
@@ -95,12 +101,11 @@ h1,h2,h3,h4,h5,h5,h6 {
 #footer p {
     position: absolute;
     top: 50%;
-    height: 75px;
     width: 100%;
     text-align: center;
     margin-top: -15px;
     color: #f6f6f6;
-    
+
 }
 
 /* Responsive Slides */
@@ -137,7 +142,7 @@ th, td {
 .image-container { 
     position: relative; 
     width: 100%;
-    margin: 2.5rem auto;
+    margin: 0 auto 2.5rem;
 }
 
 .image-container img {
@@ -152,11 +157,40 @@ th, td {
 
 /* Page Styles */
 
+/* Index */
+
+#tagline {
+    display: block;
+    float: none;
+    text-align: center;
+    line-height: 2;
+    font-size: 1.5rem;
+    color: #343434;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+}
+
+#portfolio img {
+    border-radius: 5px;
+}
+
+#csa {
+    text-align: center;
+}
+
+#csa img {
+    display: inline-block;
+}
+
 /* Contact */
 
 #contact h4 {
-    color: #343434;
-    margin-bottom: .4rem;
+    color: #121212;
+    text-align: center;
+}
+
+#contact h4:not(:last-child) {
+    margin-bottom: .6rem;
 }
 
 #staff {
@@ -255,10 +289,14 @@ th, td {
         margin-top: 0;
         margin-bottom: 0;
     }
-    
+
     #navigation ul {
         display: block;
     }     
+
+    #tagline {
+        float: right;
+    }
 
     #staff td {
         min-width: 175px;
