@@ -92,7 +92,7 @@ h5 {
 #navigation ul li a {
     display: inline-block;
     line-height: 49px;
-    padding: 0 17px;
+    padding: 0 15px;
     width: 100%;
     text-decoration: none;
     text-transform: uppercase;
@@ -223,6 +223,10 @@ th, td {
     margin-bottom: 3rem; 
 }
 
+#staff td {
+    text-align: center;
+}
+
 #staff td:first-child {
     color: #000000;
 }
@@ -281,7 +285,7 @@ th, td {
 
 #plasma-container { 
     position: relative; 
-    width: 396px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
@@ -387,6 +391,10 @@ th, td {
         padding-right: 3%;
     }
 
+    #plasma-container {
+        max-width: 396px;
+    }
+    
     #projects td:first-child {
         min-width: 500px;
     }
