@@ -5,19 +5,20 @@
         <!-- Basic Page Needs -->
         <meta charset="utf-8">
         <title>Ducts Unlimited - Services</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="See what services Ducts Unlimited Mechanical Systems offers">
+        <meta name="author" content="Ducts Unlimited Mechanical Systems">
 
         <!-- Mobile Specific Metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- FONT -->
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/responsiveslides.css">
         <link rel="stylesheet" href="css/custom.css">
 
         <!-- Favicon -->
@@ -25,6 +26,19 @@
 
         <!-- JavaScript -->
         <script src="js/jquery.2.1.3.min.js"></script>
+        <script src="js/nav.min.js"></script>
+        <script src="js/responsiveslides.1.54.min.js"></script>
+        <script>
+            $(function () {
+                $(".rslides").responsiveSlides({
+                    auto: true,
+                    pagination: false,
+                    nav: false,
+                    fade: 500,
+                    maxwidth: 150
+                });
+            });
+        </script>
 
     </head>
     <body>
@@ -37,16 +51,14 @@
         </div>
         <div class="band navigation"> 
             <div id="navigation" class="container">
-                <div class="row">
-                    <div class="twelve columns">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="fabrication.html">Fabrication</a></li>
-                            <li><a href="customers.html">Customers</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="row twelve columns">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="customers.html">Customers</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -55,12 +67,12 @@
                 <h3>Services</h3>
             </div>
             <div class="row u-full-width">
-                <div class="columns five">
-                    <p>At Ducts Unlimited, we strive to provide the best in products and services.</p>
-                    <p>Below is a sampling of the services offered by Ducts Unlimited Mechanical Services.</p>
-                    <p>If you need something that is not listed here, please <a href="contact.html" title="Contact Us">contact us</a> so that we can see how we might address your needs.</p>
+                <div class="column one-half">
+                    <p>At Ducts Unlimited, we strive to provide the best in products and services.</p> 
+                    <p>We have the experience as well as the latest tools and technology to tackle almost any project, big or small.  Just hear what some of our <a href="customers.html" title="Hear more from our satisfied customers">satisfied customers</a> have to say.</p>
+                    <p>Below is a sampling of our services.  If you need something that is not listed here, please <a href="contact.html" title="Contact Us">contact us</a> so that we can see how we might address your needs.</p>
                 </div>
-                <div class="columns offset-by-one four">
+                <div class="column one-half">
                     <div id="carrier" class="image-container">
                         <img src="images/carrier-374x250.jpg" alt="Large Carrier Unit">
                         <p class="caption">We Provide Custom Services</p>
@@ -105,6 +117,45 @@
             <div id="supplier" class="row u-full-width">
                 <img src="images/liebert-logo-300x69.png" alt="Liebert Logo"/>
                 <img src="images/carrier-logo-300x126.png" alt="Carrier Logo"/>
+            </div>
+            <div class="row u-full-width">
+                <h3>Fabrication Shop</h3>
+                <div class="row u-full-width">
+                    <div class="columns eight">
+                        <p>Ducts Unlimited has a full production sheet metal shop and can fabricate any fitting you can draw. We do custom fittings for several sheet metal contractors at competitive prices. Our shop is equipped with a state of the art, computerized plasma cutter to insure precise fabrication of your parts. We provide tags for all fittings so parts are easy to identify on the job site. Turn around is fast on all orders, so emergency fittings are no problem. <a href="contact.html" title="Contact us today">Contact us</a> today for a free quote. 
+                            John 303-657-5592 Ext 106</p>
+                    </div>
+                    <div class="columns four"> 
+                        <ul id="custom" class="rslides">
+                            <li>
+                                <img src="images/fabrication-1-150x172.jpg" alt="Custom Fabrication #1">
+                                <p class="caption">Custom Fabricated Parts</p>
+                            </li>
+                            <li>
+                                <img src="images/fabrication-2-150x150.jpg" alt="Custom Fabrication #2">
+                                <p class="caption">Custom Fabricated Parts</p>
+                            </li>
+                            <li>
+                                <img src="images/fabrication-3-150x100.jpg" alt="Custom Fabrication #3">
+                                <p class="caption">Custom Fabricated Parts</p>
+                            </li>
+                            <li>
+                                <img src="images/fabrication-4-150x150.jpg" alt="Custom Fabrication #4">
+                                <p class="caption">Custom Fabricated Parts</p>
+                            </li>
+                            <li>
+                                <img src="images/fabrication-5-150x150.jpg" alt="Custom Fabrication #5">
+                                <p class="caption">Custom Fabricated Parts</p>
+                            </li>                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row u-full-width">
+                <div id="plasma-container">
+                    <img src="images/plasma-cutter-396x212.jpg" alt="State of the Art, Computerized Plasma Cutter" />
+                    <p class="caption">State of the Art Plasma Cutter<br>Insures Precision Fabrication</p>
+                </div>
             </div>
             <div class="row u-full-width">
                 <h3>Recently Completed</h3>

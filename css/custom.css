@@ -10,6 +10,10 @@ body {
     font-size: 1.7em;
 }
 
+a {
+    color: #2B5F8C;
+}
+
 p {
     line-height: 1.4;
 }
@@ -74,33 +78,39 @@ h5 {
 }
 
 #navigation ul {
-    display: block;
+    display: none;
+    text-align: center;
+    margin-bottom: 0;
 } 
 
 #navigation ul li {
-    display: inline;
-    float: left;
+    display: inline-block;
     position: relative;
     margin: 0;
 }
 
 #navigation ul li a {
     display: inline-block;
-    float: left;
     line-height: 49px;
-    padding: 0 21px;
+    padding: 0 17px;
     width: 100%;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 17px;
     color: #ffffff;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.07em;
 }
 
 #navigation ul li a:hover {
     background-color: #cf2b08;
     color: #ffffff;
     cursor: pointer;
+}
+
+#navigation select {
+    width: 100%;
+    margin: 10px 0;
+    display: block;
 }
 
 #footer {
@@ -206,6 +216,7 @@ th, td {
 
 #staff {
     line-height: 1.3;
+    font-family: 'Lato', sans-serif;
 }
 
 #staff tr {
@@ -213,7 +224,7 @@ th, td {
 }
 
 #staff td:first-child {
-    font-weight: bold;
+    color: #000000;
 }
 
 /* Services */
@@ -286,6 +297,10 @@ th, td {
 
 /* Customers */
 
+#industrial {
+    max-width: 400px;
+}
+
 #customers {
     line-height: 1.3;
     font-family: 'Lato', sans-serif;
@@ -305,6 +320,12 @@ th, td {
 
 #testimonials p.dt {
     font-style: normal;
+}
+
+/* News */
+
+#news p.dt {
+    font-weight: bold;
 }
 
 /* Media Queries */
@@ -336,9 +357,13 @@ th, td {
         margin-top: 0;
     }
 
+    #navigation select {
+        display: none;
+    }   
+
     #navigation ul {
         display: block;
-    }     
+    }    
 
     #tagline {
         float: right;
