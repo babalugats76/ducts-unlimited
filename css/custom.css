@@ -41,10 +41,6 @@ h5 {
     color: #923e2c;
 }
 
-.top-margin {
-    margin-top: 2.5rem;
-}
-
 #content {
     margin-bottom: 2.5rem;
 }
@@ -178,6 +174,10 @@ th, td {
 /* Page Styles */
 
 /* Index */
+
+#facebook {
+    text-align: center;
+}
 
 #tagline {
     display: block;
@@ -322,8 +322,9 @@ th, td {
     line-height: 2;
 }
 
-#testimonials p.dt {
+#testimonials p.dt, p.signature {
     font-style: normal;
+    font-weight: bold;
 }
 
 /* News */
@@ -356,10 +357,6 @@ th, td {
         display: table-cell;
         padding-right: 2%;
     }    
-
-    .top-margin {
-        margin-top: 0;
-    }
 
     #navigation select {
         display: none;
